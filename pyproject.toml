@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crypto-toolkit"
+version = "1.0.0"
+description = "Production-grade cryptanalysis toolkit implementing classical and modern algebraic attacks from scratch"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+    { name = "Sivakumar Dogga", email = "24m1528@iitb.ac.in" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Security :: Cryptography",
+]
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["crypto_toolkit*"]
